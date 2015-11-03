@@ -5,6 +5,7 @@ package com.lomo.demo;
  */
 public class HelloGit {
     public static void main(String[] args) {
+
         System.out.println("Java Hello Git!");
         System.out.println("Add file to commit by IDEA!");
     }
