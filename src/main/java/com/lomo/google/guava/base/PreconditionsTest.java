@@ -1,4 +1,4 @@
-package com.lomo.google.guava;
+package com.lomo.google.guava.base;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
@@ -22,6 +22,7 @@ public class PreconditionsTest {
         List<String> list = Lists.newArrayList("1", "2", "3", "4");
         List<String> list2 = null;
         System.out.println(list.subList(0, 3));//前包，后不包
+        System.out.println(Preconditions.checkNotNull(list));
         System.out.println(Preconditions.checkNotNull(list2));
 
     }

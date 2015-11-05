@@ -1,4 +1,4 @@
-package com.lomo.google.guava;
+package com.lomo.google.guava.base;
 
 import com.google.common.collect.Lists;
 
