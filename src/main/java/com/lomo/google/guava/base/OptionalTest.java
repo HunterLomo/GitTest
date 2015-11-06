@@ -31,6 +31,12 @@ import java.util.List;
  */
 public class OptionalTest {
     public static void main(String[] args) {
+        Optional<Person> optional_person = Optional.of(new Person(33999, "name1", 33, new Date()));
+        System.out.println(optional_person.get());
+//        Optional<String> optional_person_name = Optional.of(new Person().getName());
+//        System.out.println(optional_person_name.get());//name为null
+        System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&");//name为null
+
         List<String> list = Lists.newArrayList("111", "222");
         Optional<List<String>> optional = Optional.of(list);
         System.out.println(optional.get());

@@ -13,5 +13,7 @@ public class ObjectsTest {
 
 
         System.out.println(Objects.hashCode(HelloGit.class));
+
+        Objects.toStringHelper("");
     }
 }
