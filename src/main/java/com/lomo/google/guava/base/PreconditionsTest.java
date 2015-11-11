@@ -2,6 +2,7 @@ package com.lomo.google.guava.base;
 
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
+import com.sun.istack.internal.Nullable;
 
 import java.util.List;
 
@@ -30,7 +31,8 @@ public class PreconditionsTest {
 
     }
 
-    public void doSomething(String name, int age, String desc) {
+    @Nullable
+    public void doSomething(@Nullable String name, int age, String desc) {
         Preconditions.checkNotNull(name, "name may not be null");
         Preconditions.checkArgument(age >= 18 && age < 99, "age must in range (18,99)");
         Preconditions.checkArgument(desc != null && desc.length() < 10, "desc too long, max length is ", 10);
